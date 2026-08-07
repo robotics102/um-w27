@@ -8,7 +8,7 @@ nav_order: 1
 ROB 102, Winter 2027 at the University of Michigan
 {: .fs-6 .fw-300 }
 
-This is the course page for the Fall 2025 offering of [Hello, Robot! Introduction to AI and Programming](https://hellorob.org){:target="_blank"} at the University of Michigan. This site contains information relevant to Michigan students.
+This is the course page for the Winter 2027 offering of [Hello, Robot! Introduction to AI and Programming](https://hellorob.org){:target="_blank"} at the University of Michigan. This site contains information relevant to Michigan students.
 
 ## Table of contents
 {: .no_toc .text-delta }
