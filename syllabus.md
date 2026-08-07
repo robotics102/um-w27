@@ -6,7 +6,7 @@ nav_order: 3
 
 # Syllabus
 {: .no_toc }
-ROB 102, Fall 2025 at The University of Michigan
+ROB 102, Winter 2027 at The University of Michigan
 {: .fs-6 .fw-300 }
 
 
