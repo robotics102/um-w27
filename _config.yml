@@ -1,8 +1,8 @@
-title: ROB 102 @ UM F25
-description: University of Michigan offering of Robotics 102 in Fall 25
+title: ROB 102 @ UM WN27
+description: University of Michigan offering of Robotics 102 in Winter 2027
 theme: just-the-docs
 
-url: https://robotics102.org/um-f25
+url: https://robotics102.org/um-w27
 baseurl: '' # the subpath of your site, e.g. /blog
 
 favicon_ico: "/assets/images/icon.png"
