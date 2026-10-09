@@ -14,14 +14,14 @@ Project 0
 
 This is the full Pocket Calculator project. In this checkpoint you will implement similar functionality to last time in several functions. You will then use these functions to implement the full pocket calculator according to the specification below. Complete the following:
 
-- Implement ```addTwoNumbers()``` in ```src/common/utils.cpp``` according to the header ```include/common/utils.h``` and the behavior specified below.
-- Implement ```subtractTwoNumbers()``` in ```src/common/utils.cpp``` according to the header ```include/common/utils.h``` and the behavior specified below.
-- Implement ```multiplyTwoNumbers()``` in ```src/common/utils.cpp``` according to the header ```include/common/utils.h``` and the behavior specified below.
-- Implement ```divideTwoNumbers()``` in ```src/common/utils.cpp``` according to the header ```include/common/utils.h``` and the behavior specified below.
-- Implement ```getNumber()``` in ```src/common/utils.cpp``` according to the header ```include/common/utils.h``` and the behavior specified below.
-- Implement ```getOperator()``` in ```src/common/utils.cpp``` according to the header ```include/common/utils.h``` and the behavior specified below.
-- Implement ```performOperation()``` in ```src/common/utils.cpp``` according to the header ```include/common/utils.h``` and the behavior specified below.
-- Complete the program in ```src/6_pocket_calculator.cpp``` so that it performs the pocket calculator behavior specified below.
+- Implement ```addTwoNumbers()``` in ```src/common/utils.cpp``` according to the header ```include/pocket_calculator/common/utils.h``` and the behavior specified below.
+- Implement ```subtractTwoNumbers()``` in ```src/common/utils.cpp``` according to the header ```include/pocket_calculator/common/utils.h``` and the behavior specified below.
+- Implement ```multiplyTwoNumbers()``` in ```src/common/utils.cpp``` according to the header ```include/pocket_calculator/common/utils.h``` and the behavior specified below.
+- Implement ```divideTwoNumbers()``` in ```src/common/utils.cpp``` according to the header ```include/pocket_calculator/common/utils.h``` and the behavior specified below.
+- Implement ```getNumber()``` in ```src/common/utils.cpp``` according to the header ```include/pocket_calculator/common/utils.h``` and the behavior specified below.
+- Implement ```getOperator()``` in ```src/common/utils.cpp``` according to the header ```include/pocket_calculator/common/utils.h``` and the behavior specified below.
+- Implement ```performOperation()``` in ```src/common/utils.cpp``` according to the header ```include/pocket_calculator/common/utils.h``` and the behavior specified below.
+- Complete the program in ```src/6_pocket_calc.cpp``` so that it performs the pocket calculator behavior specified below.
 
 You'll want to use the functions to your advantage!
 
@@ -33,7 +33,7 @@ The functions are intended to help you implement the calculator modularly and su
 
 In general, when writing C or C++, functions will be defined and documented in a header file (a file ending in ```.h```), and then implemented in a source file ```.cpp```. The definition and documentation are *exactly* a description of the function's intented behavior. Tests can then be written to check that the function adheres to the specified behavior. 
 
-In this course we'll occaisonally give you function definitions with documentation and ask you to implement them. You'll be graded (via testing) on whether your functions deliver the specified behavior. For now we'll take a look at the documentation together, but we'll do so with the hope that in future projects and future experiences beyond this course you'll be able to understand intended behavior by reading documentation on your own. Let's have a look in ```include/common/utils.h```:
+In this course we'll occaisonally give you function definitions with documentation and ask you to implement them. You'll be graded (via testing) on whether your functions deliver the specified behavior. For now we'll take a look at the documentation together, but we'll do so with the hope that in future projects and future experiences beyond this course you'll be able to understand intended behavior by reading documentation on your own. Let's have a look in ```include/pocket_calculator/common/utils.h```:
 
 ```
 /**
@@ -225,8 +225,23 @@ The program also has an output message for computing a result and an output mess
 
 You are encouraged to use any of the helper functions you implemented in ```src/common/utils.cpp``` to produce this behavior. This is not required, but the functions will be tested separately so you'll have to implement them, and might as well put them to good use.
 
+## Advanced Extensions
+
+Advanced extensions are optional features which you may complete to explore this assignment further. They are not required and are not part of your grade. Complete them in ```src/7_pocket_calc_advanced.cpp```, using the additional helper functions declared for them in ```include/pocket_calculator/common/utils.h```.
+
+- **P0.i:** Enable the user to undo their last operation by specifying ```u``` as the operator.
+- **P0.ii:** Enable the user to clear the calculator by specifying ```c``` as the operator.
+- **P0.iii:** Compute the final result of the user specified equation using the Order of Operations.
+- **P0.iv:** Enable the user to store and load their current set of operations through a file named ```resultcalc.txt``` such that this equation can be used across multiple program executions, by specifying ```s``` to save and ```l``` to load.
+
+Unlike the base pocket calculator, the advanced version keeps the whole equation around instead of a single running result, so it can undo, clear, and re-evaluate it with the order of operations as you go. The operator prompt becomes ```Please type a math operator (one of: + - * / or u to undo, c to clear, s to save, l to load, q to quit): ```.
+
+### Testing the Extensions
+
+The test cases for these extensions exist in ```test_public.cpp``` but are disabled by default (their test suite names start with ```DISABLED_```) so they don't affect your grade on the base checkpoint. If you implement an extension and want to check your work, either remove the ```DISABLED_``` prefix from the suites you've implemented, or run all of them at once with ```./test_public --gtest_also_run_disabled_tests``` in the ```/build``` directory.
+
 ## Testing
 
 All of the code for this checkpoint can be tested by running the local unit tests. Make sure your code is built, then run ```ctest -R PocketCalculator --output-on-failure```.
 
-To use your pocket calculator for arithmetic or debugging, run ```./pocket_calculator``` in the ```/build``` directory.
+To use your pocket calculator for arithmetic or debugging, run ```./pocket_calculator``` in the ```/build``` directory. To try the advanced extensions, run ```./pocket_calculator_advanced``` instead.
