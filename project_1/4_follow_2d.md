@@ -16,7 +16,7 @@ In this activity you will implement two functions for finding the minimum value 
 
 - Implement ```findMinDist()``` in ```mbot_lib/mbot_lib/utils.cpp``` according to the header file ```mbot_lib/mbot_lib/utils.h```.
 - Implement ```findMinNonzeroDist()``` in ```mbot_lib/mbot_lib/utils.cpp``` according to the header file ```mbot_lib/mbot_lib/utils.h```.
-- Implement follow me 2D in ```4_follow_2d.cpp``` so that the robot performs the behavior specified below.
+- Implement follow me 2D in ```p1_wall_follower/4_follow_2d.cpp``` so that the robot performs the behavior specified below.
 
 Feel free to look back at how you implemented follow me 1D.
 
@@ -30,6 +30,7 @@ The robot should follow the nearest obstacle without spinning, as shown in the v
 <iframe style="max-width: 100%;" class="centered" width="560" height="315" src="https://www.youtube.com/embed/Dg6IREtXIS0?si=4PyFbt7oCZn5iOkq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br/>
 
 ## Testing
-Breadth first search can be tested by running. To test only the functions for this checkpoint run ```ctest -R FindMinDist --output-on-failure && ctest -R FindMinNonzeroDist --output-on-failure``` in the ```/build``` directory.
+
+The functions can be tested by running the local unit tests. To test only the functions for this checkpoint run ```ctest -R FindMinDist --output-on-failure && ctest -R FindMinNonzeroDist --output-on-failure``` in the ```/build``` directory.
 
 The robot behavior can be tested by running the ```follow_2d``` executable. 

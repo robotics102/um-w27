@@ -17,7 +17,7 @@ This is the final checkpoint for the wall following project. In this checkpoint 
 - Implement ```vectorAdd()``` in ```mbot_lib/mbot_lib/utils.cpp``` according to the header file ```mbot_lib/mbot_lib/utils.h```.
 - Implement ```crossProduct()``` in ```mbot_lib/mbot_lib/utils.cpp``` according to the header file ```mbot_lib/mbot_lib/utils.h```.
 - Implement ```computeWallFollowerCommand()``` in ```mbot_lib/mbot_lib/behaviors.cpp``` according to the header file ```mbot_lib/mbot_lib/behaviors.h```.
-- Implement wall following in ```p1_wall_follower/5_wall_follower.md``` so that the robot performs the behavior specified below.
+- Implement wall following in ```p1_wall_follower/5_wall_follower.cpp``` so that the robot performs the behavior specified below.
 
 The functions ```vectorAdd()``` and ```crossProduct()``` as well as functions from earlier checkpoints will come in handy for implementing ```computeWallFollowerCommand()```.
 

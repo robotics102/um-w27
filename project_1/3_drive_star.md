@@ -32,6 +32,6 @@ Note that the error from driving will likely keep your shape from looking exactl
 
 ## Testing
 
-The functions can be tested by running the local unit tests. To test only the functions for this checkpoint run ```ctest -R RayConversionCartisean --output-on-failure && ctest -R RayConversionVector --output-on-failure``` in the ```/build``` directory.
+The functions can be tested by running the local unit tests. To test only the functions for this checkpoint run ```ctest -R RayConversionCartesian --output-on-failure && ctest -R RayConversionVector --output-on-failure``` in the ```/build``` directory.
 
 The robot behavior can be tested by running the ```drive_star``` executable. 
