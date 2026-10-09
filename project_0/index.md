@@ -17,18 +17,18 @@ Project 0 will be done individually on your laptop. Feel free to chat with other
 
 ## Getting Your Code
 
-Make sure you've completed the [Computer Setup](https://robotics102.org/um-f25/workflows/computer_setup.html) guide before continuing! 
+Make sure you've completed the [Computer Setup](https://robotics102.org/um-w27/workflows/computer_setup.html) guide before continuing! 
 
-Project 0 has it's own codebase. To get your starter code download the files by clicking [here](https://robotics102.org/um-f24/assets/template_code/p0_pocket_calculator_template.zip) and extracting them, or by running the commands below in your terminal. 
+Project 0 has it's own codebase. To get your starter code download the files by clicking [here](https://robotics102.org/um-w27/assets/template_code/p0_pocket_calculator_template.zip) and extracting them, or by running the commands below in your terminal. 
 
 * Navigate to a directory that is not already a git repository using ```cd```. If running ```git status``` outputs ```fatal: ...``` you're not in a git repository.
-* Download the files from the website ```wget https://robotics102.org/um-f24/assets/template_code/p0_pocket_calculator_template.zip```.
+* Download the files from the website ```wget https://robotics102.org/um-w27/assets/template_code/p0_pocket_calculator_template.zip```.
 * Unzip the files ```unzip p0_pocket_calculator_template.zip```.
 * Delete the zip archive ```rm p0_pocket_calculator_template.zip```.
 
 ## Setting Up Your Repository
 
-Setting up a GitHub repo for this project is optional. If you don't know what GitHub is, and we haven't covered it in class yet, feel free to skip this section. If you like to skip ahead, or are already familiar with git refer to the [Setting Up a Repository](https://robotics102.org/um-f25/workflows/setting_up_repo.html) guide. 
+Setting up a GitHub repo for this project is optional. If you don't know what GitHub is, and we haven't covered it in class yet, feel free to skip this section. If you like to skip ahead, or are already familiar with git refer to the [Setting Up a Repository](https://robotics102.org/um-w27/workflows/setting_up_repo.html) guide. 
 
 ## Building Your Code
 

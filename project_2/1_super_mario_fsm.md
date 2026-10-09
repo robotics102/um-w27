@@ -34,7 +34,7 @@ Mario starts off Regular Mario (`m`), and encounters events. Events are represen
 
 This is a Finite State Machine that can be visualized as follows:
 
-![Super Mario FSM](https://robotics102.org/um-f25/assets/images/p2/super_mario_fsm.jpg){:style="width:800px;" .centered .rd-corners}
+![Super Mario FSM](https://robotics102.org/um-w27/assets/images/p2/super_mario_fsm.jpg){:style="width:800px;" .centered .rd-corners}
 
 Every step taken in Small Mario state should add 0 points. Every step taken in Regular Mario state should add 1 point. Every step taken in Big Mario state should add 3 points.
 

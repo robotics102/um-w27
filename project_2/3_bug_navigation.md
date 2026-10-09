@@ -11,14 +11,14 @@ nav_order: 3
 
 ## Instructions
 
-This is the final checkpoint for the bug navigation project. In this checkpoint you will implement a function for checking whether the straight line path to a goal pose is obstructed. You will then use this function as a transition condition between the two states in the bug navigation state machine. The first state will drive in a straight line to the goal, like you implemented in [Robot Hits the Spot](https://robotics102.org/um-f25/project_2/2_hit_the_spot.html). The second state will wall follow around an obstruction, like you implemented in [Wall Follower](https://robotics102.org/um-f25/project_1/5_wall_follower.html). Complete the following:
+This is the final checkpoint for the bug navigation project. In this checkpoint you will implement a function for checking whether the straight line path to a goal pose is obstructed. You will then use this function as a transition condition between the two states in the bug navigation state machine. The first state will drive in a straight line to the goal, like you implemented in [Robot Hits the Spot](https://robotics102.org/um-w27/project_2/2_hit_the_spot.html). The second state will wall follow around an obstruction, like you implemented in [Wall Follower](https://robotics102.org/um-w27/project_1/5_wall_follower.html). Complete the following:
 
 - Implement ```isGoalAngleObstructed()``` in ```mbot_lib/mbot_lib/behaviors.cpp``` according to the header file ```mbot_lib/mbot_lib/behaviors.h```.
 - Implement bug navigation in ```p2_bug_navigation/3_bug_navigation.cpp``` so that the robot performs the behavior specified below.
 
 For ```isGoalAngleObstructed()```, you'll want to make use of the ```findMinNonzeroDistInSlice()``` utility function which is provided for you in ```mbot_lib/mbot_lib/utils.h```. This function can be best understood using the diagram below.
 
-![findMinNonzeroDistInSlice()](https://robotics102.org/um-f25/assets/images/p2/find_min_in_slice.png){:style="width:400px;" .centered .rd-corners}
+![findMinNonzeroDistInSlice()](https://robotics102.org/um-w27/assets/images/p2/find_min_in_slice.png){:style="width:400px;" .centered .rd-corners}
 
 Using it in ```isGoalAngleObstructed()``` should make checking for obstacles near the robot in the direction of the goal pose much easier. For implementing the state machine you will want to make use of all the functions in ```mbot_lib/mbot_lib/behaviors.cpp```.
 
@@ -34,4 +34,4 @@ In your demonstration, be sure to show the input goal pose and final pose.
 
 There are no unit tests for this checkpoint.
 
-The robot behavior can be tested by running the ```bug_navigation```. 
+The robot behavior can be tested by running the ```bug_navigation``` executable. 
